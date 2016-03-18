@@ -13,6 +13,7 @@ public class TestStatic {
 		// -------------------------------------------------------
 		// Calling static methods - Instances are not required
 		// -------------------------------------------------------
+		
 
 		double result = MyMath.add(2.5, 3.0);
 

@@ -20,6 +20,10 @@ public class MyMath {
 		System.out.println("static block");
 
 	}
+	
+	{
+		
+	}
 
 	/**
 	 * Default Constructor

@@ -5,16 +5,38 @@ import java.util.HashSet;
 
 public class TestCollection {
 
+	int[] arr = new int[10];
+
+	int arr2[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
 	public TestCollection() {
 
 	}
 
 	public static void main(String[] args) {
 
+		TestCollection t = new TestCollection();
+		t.iterateArray();
+
 		iterateArrayListExample();
 
 		testHashset();
 
+	}
+
+	private void iterateArray() {
+
+		// --- conventional for loop
+		for (int i = 0; i < arr2.length; i++) {
+
+			System.out.println("i= " + i);
+		}
+
+		// --- for each loop
+		for (int i : arr2) {
+
+			System.out.println("i= " + i);
+		}
 	}
 
 	private static void iterateArrayListExample() {

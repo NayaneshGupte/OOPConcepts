@@ -15,11 +15,10 @@ public abstract class Employee {
 
 	protected double salary;
 
-	protected final long empID;
+	protected final long empID =1000;
 
 	public Employee() {
 
-		empID = 100;
 	}
 
 	// -------------------------------------------------------

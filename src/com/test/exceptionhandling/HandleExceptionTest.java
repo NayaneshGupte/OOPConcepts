@@ -13,9 +13,10 @@ public class HandleExceptionTest {
 
 	public static void main(String[] args) {
 
-		checkedException();
+		checkedException("abc");
 
 		uncheckedException();
+		
 
 	}
 
@@ -65,9 +66,8 @@ public class HandleExceptionTest {
 
 	}
 
-	private static void checkedException() {
+	private static void checkedException(String s ) {
 
-		String s = "abc";
 
 		try {
 
