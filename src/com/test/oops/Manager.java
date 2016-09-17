@@ -4,6 +4,8 @@ public abstract class Manager extends Employee {
 
 	protected int teamSize;
 
+	private int rating;
+
 	public Manager() {
 
 	}
@@ -12,6 +14,14 @@ public abstract class Manager extends Employee {
 
 	public void giveReport() {
 
+	}
+
+	/**
+	 * final method - can't be overridden in child class. But it can be used.
+	 */
+	protected final int evaluateTeamMember() {
+
+		return rating;
 	}
 
 }

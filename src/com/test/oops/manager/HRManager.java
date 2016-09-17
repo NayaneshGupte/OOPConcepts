@@ -13,7 +13,7 @@ public class HRManager extends Manager {
 
 	public void printDetails() {
 
-		System.out.println(emp.getName());
+		System.out.println("Name: " + emp.getName() + " Rating: " + evaluateTeamMember());
 	}
 
 	@Override
@@ -36,5 +36,4 @@ public class HRManager extends Manager {
 		super.giveReport();
 
 	}
-
 }

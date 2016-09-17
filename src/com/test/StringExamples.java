@@ -45,6 +45,13 @@ public class StringExamples {
 
 		}
 		
+		
+		if(s5.equals(s6)){
+			
+			
+		}
+		
+		
 		if(s5.equalsIgnoreCase(s6)){
 			
 		}else{

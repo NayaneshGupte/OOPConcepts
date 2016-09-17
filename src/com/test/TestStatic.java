@@ -13,9 +13,8 @@ public class TestStatic {
 		// -------------------------------------------------------
 		// Calling static methods - Instances are not required
 		// -------------------------------------------------------
-		
 
-		double result = MyMath.add(2.5, 3.0);
+		double result = MyMath.add(MyMath.PI, 3.0);
 
 		System.out.println("result: " + result);
 

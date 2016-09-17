@@ -15,10 +15,44 @@ public abstract class Employee {
 
 	protected double salary;
 
-	protected final long empID =1000;
+	/**
+	 * final - Constant - can't be changed
+	 * 
+	 * This constant is object (instance) level constant. Value can't be changed
+	 * for this particular object. But it will have different value for other
+	 * objects.
+	 */
+	protected final long empID;
 
+	public static int count;
+
+	// -----------------------------------------------------------------------------------------------
+	// Constructor Overloading - Multiple constructors with different no of
+	// parameters
+	// -----------------------------------------------------------------------------------------------
+
+	/**
+	 * Constructor - 1
+	 */
 	public Employee() {
+		/*
+		 * Initializing final variable is mandatory so that it won't be changed
+		 * by any mean in future using reference of this object
+		 */
+		this.empID = 0;
 
+		count = count + 1;
+
+		System.out.println("Count: " + count);
+	}
+
+	/**
+	 * Constructor - 2
+	 * 
+	 * @param empID
+	 */
+	public Employee(long empID) {
+		this.empID = empID;
 	}
 
 	// -------------------------------------------------------

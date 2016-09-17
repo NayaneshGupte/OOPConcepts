@@ -2,6 +2,8 @@ package com.test.collections;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
 
 public class TestCollection {
 
@@ -51,6 +53,11 @@ public class TestCollection {
 		for (String obj : al) {
 			System.out.println(obj);
 		}
+		
+		LinkedList<String> ll = new LinkedList<>();
+		ll.add("Ravi");
+		
+		
 	}
 
 	private static void testHashset() {
@@ -64,6 +71,8 @@ public class TestCollection {
 		s2.setStandard("10TH");
 
 		HashSet<Student> h = new HashSet<Student>();
+		
+		LinkedHashSet<Student> lh = new LinkedHashSet<>();
 
 		if (h.add(s1)) {
 

@@ -1,7 +1,10 @@
 package com.test.oops;
 
 /**
- * Interface are 100% abstract
+ * Interface are 100% abstract.
+ * 
+ * This class talks about functional behavior and not properties like abstract
+ * class.
  * 
  * @author nayanesh
  *
@@ -14,7 +17,7 @@ public interface Racing {
 	int MAX_POWER = 12000;
 
 	/**
-	 * by default abstract method
+	 * methods in interfaces are by default abstract method
 	 */
 	void race();
 

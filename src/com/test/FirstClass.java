@@ -1,14 +1,18 @@
 package com.test;
 
 import com.test.collections.Student;
+import com.test.oops.Lambo;
+import com.test.teststatic.MyMath;
 
 public class FirstClass {
+
+	private short smallNumber;
 
 	private int count;
 
 	public long number;
 
-	boolean isCorrect;
+	boolean isCorrect = false;
 
 	float small = 3.14f;
 
@@ -18,7 +22,13 @@ public class FirstClass {
 
 	final double pi = 3.1428;
 
+	// constructor
 	public FirstClass() {
+
+	}
+
+	// constructor
+	public FirstClass(int abc) {
 
 	}
 
@@ -39,11 +49,29 @@ public class FirstClass {
 
 		System.out.println("Main Method");
 
-		FirstClass firstClass = new FirstClass();
+		FirstClass f = new FirstClass();
 
-		Student s1 = new Student();
+		FirstClass f2 = new FirstClass();
+		
+		FirstClass f3 = new FirstClass(123);
 
-		Student s2 = new Student();
+		Student s = new Student();
+		s.getAge();
+
+		f.big = 123;
+
+		f2.big = 456;
+
+		int result = f.add(2, 3);
+
+		f.print("Nayanesh");
+
+		System.out.println("Result: " + result);
+
+		int r = MyMath.add(2, 3);
+		
+		Lambo l = new Lambo();
+		l.openDoor();
 
 	}
 
