@@ -10,6 +10,8 @@ import com.test.oops.Employee;
  */
 public class JAVAProgrammer extends Employee {
 
+	private String javaProgram;
+
 	public JAVAProgrammer() {
 		// TODO Auto-generated constructor stub
 

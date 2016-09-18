@@ -16,8 +16,10 @@ public class OOPsApplication {
 		HRManager hrm = new HRManager();
 
 		JAVAProgrammer programmer = new JAVAProgrammer();
-
+		
 		programmer.setName("John");
+		
+		programmer.getName();
 
 		hrm.addTeamMember(programmer);
 
@@ -41,6 +43,8 @@ public class OOPsApplication {
 
 			new JAVAProgrammer();
 		}
+		
+		
 
 	}
 

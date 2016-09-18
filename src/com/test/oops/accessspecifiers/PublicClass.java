@@ -10,6 +10,7 @@ public class PublicClass {
 
 	public PublicClass() {
 
+		DefaultClass defaultClass = new DefaultClass();
 	}
 
 	/**

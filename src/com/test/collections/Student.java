@@ -77,8 +77,19 @@ public class Student implements Comparable<Student> {
 	}
 
 	// ----------------------------------------------------------------
-	// Override Equals and Hashcode both
+	// Override Equals and Hashcode both - equals and hashcode has contract so
+	// it is compulsory to override both methods, when Object Comparison is to
+	// be done using equals method
 	// ----------------------------------------------------------------
+
+	/*
+	 * equals method needs to be overridden to compare two objects on certain
+	 * parameters.
+	 * 
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
 
 	@Override
 	public boolean equals(Object obj) {
@@ -93,6 +104,13 @@ public class Student implements Comparable<Student> {
 		return false;
 	}
 
+	/*
+	 * hashcode needs to be overridden to make sure identifier for memory
+	 * location is also taken care of (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#hashCode()
+	 */
+
 	@Override
 	public int hashCode() {
 
@@ -103,7 +121,6 @@ public class Student implements Comparable<Student> {
 		hash = hash + standard.hashCode();
 
 		return hash;
-
 	}
 
 	// ----------------------------------------------------------------

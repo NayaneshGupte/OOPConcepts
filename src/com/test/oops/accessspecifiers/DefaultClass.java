@@ -3,7 +3,7 @@ package com.test.oops.accessspecifiers;
 /**
  * Default access specifier
  * 
- * This class is accessible only in this package
+ * This class is accessible only in the package in which it is present.
  * 
  * @author nayanesh
  *
@@ -11,7 +11,7 @@ package com.test.oops.accessspecifiers;
 class DefaultClass {
 
 	public DefaultClass() {
-		
+
 	}
 
 }

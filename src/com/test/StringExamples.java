@@ -67,19 +67,7 @@ public class StringExamples {
 		//StringExamples se = new StringExamples();
 		
 		
-		int i=4;
 		
-		int j=4;
-		
-		if(i==j){
-			
-			System.err.println("inside if");
-			System.out.println("");
-			
-		}else{
-			
-			System.err.println("inside else");
-		}
 	}
 
 }
